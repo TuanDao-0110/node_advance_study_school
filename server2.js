@@ -17,7 +17,11 @@ const mysql = require('mysql2');
 const connection = mysql.createConnection(options);
 
 const testA = async () => {
-    result = await connection.query('select * from employee')
+    result = await connection.promise().query('select * from employee').then(([rows, fields]) => {
+        return rows
+    })
+    // .catch(res => res)
+    // .then(() => connection.end());
     console.log(result)
 }
 

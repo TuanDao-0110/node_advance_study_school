@@ -34,7 +34,7 @@ const testA = async () => {
     let result = await connection.query('select * from employee')
     // 
     console.log('******* 1 result *********')
-    delete result.meta
+    // delete result.meta
     // console.log(result)
     console.log(Object.values(result))
     // 2. way to get it

@@ -3,4 +3,6 @@
 
 # Task: 
 
-1. learning a
+1. learning set up mySql vs using Mariabd library. 
+
+2. 
