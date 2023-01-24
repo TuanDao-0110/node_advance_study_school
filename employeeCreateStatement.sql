@@ -48,6 +48,16 @@ select @@PORT;
 MariaDB [(none)]> show variables where variable_name like 'hostname';
 -- or 
 SELECT @@hostname;
---or 
+--or access table: 
+
+use table_name;
+-- show table column: 
+
+show tables;
+
+-- show all data on this column; 
+
+select * from column_name;
+
 
 
