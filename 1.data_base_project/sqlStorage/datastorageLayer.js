@@ -1,7 +1,6 @@
 'use strict'
 
 const { CODES, MESSAGES } = require('./statusCode')
-const e = require('express')
 const options = require("./databaseOptions.json")
 const sql = require('./sqlStatement.json')
 const Database = require('../database')

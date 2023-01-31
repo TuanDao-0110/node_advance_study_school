@@ -30,7 +30,6 @@ select * from employee;
 
 -- 4. drop user so this user can not access this sever  
 
-
 drop user if exists 'zeke'@'localhost';
 
 create user 'tuan'@'localhost' identified by '1234';

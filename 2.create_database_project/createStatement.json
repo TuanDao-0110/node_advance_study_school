@@ -1,0 +1,91 @@
+{
+    "host": "127.0.0.1",
+    "admin": "root",
+    "user": "newuser",
+    "userpassword": "Milan123@",
+    "dropUser": true,
+    "debug": true,
+    "port": 3306,
+    "database": "employeeDb2",
+    "tables": [
+        {
+            "tableName": "employee",
+            "columns": [
+                "employeeId integer not null primary key",
+                "firstname varchar(20) not null",
+                "lastname varchar(30) not null",
+                "department varchar(15)",
+                "salary decimal(6,2)"
+            ],
+            "data": [
+                [
+                    1,
+                    "Tuan",
+                    "Dao",
+                    "IT",
+                    144
+                ],
+                [
+                    2,
+                    "John",
+                    "Dave",
+                    "Marketing",
+                    6000
+                ]
+            ]
+        },
+        {
+            "tableName": "person",
+            "columns": [
+                "employeeId integer not null primary key",
+                "firstname varchar(20) not null",
+                "lastname varchar(30) not null",
+                "department varchar(15)",
+                "salary decimal(6,2)"
+            ],
+            "data": [
+                [
+                    1,
+                    "Duyen",
+                    "Dao",
+                    "IT",
+                    144
+                ],
+                [
+                    2,
+                    "John",
+                    "Dave",
+                    "Marketing",
+                    6000
+                ]
+            ]
+        },
+        {
+            "tableName": "person2",
+            "columns": [
+                "employeeId integer not null primary key",
+                "firstname varchar(20) not null",
+                "lastname varchar(30) not null",
+                "department varchar(15)",
+                "salary decimal(6,2)"
+            ],
+            "data": [
+                [
+                    1,
+                    "Duyen",
+                    "Dao",
+                    "IT",
+                    144
+                ],
+                [
+                    2,
+                    "John",
+                    "Dave",
+                    "Marketing",
+                    6000
+                ]
+            ]
+        }
+    ],
+    "allowPublicKeyRetrieval": true
+}

@@ -1,0 +1,38 @@
+{
+    "host": "127.0.0.1",
+    "admin":"root",
+    "user": "newuser2",
+    "userpassword": "Milan123@",
+    "dropUser": true,
+    "debug": true,
+    "database": "computerdb",
+    "allowPublicKeyRetrieval": true,
+    "tables": [
+        {
+            "tableName": "computer",
+            "columns": [
+                "id integer not null primary key",
+                "name varchar(20) not null",
+                "type varchar(30) not null",
+                "processor varchar(15) not null",
+                "amount integer not null"
+            ],
+            "data": [
+                [
+                    1,
+                    "Server line",
+                    "server",
+                    "Pentium 4",
+                    100
+                ],
+                [
+                    2,
+                    "Laptop",
+                    "branch",
+                    "Le",
+                    6000
+                ]
+            ]
+        }
+    ]
+}
