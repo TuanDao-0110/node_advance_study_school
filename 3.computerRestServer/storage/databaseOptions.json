@@ -1,0 +1,7 @@
+{
+    "host":"127.0.0.1",
+    "user":"newuser2",
+    "password": "Milan123@",
+    "database": "computerdb",
+    "allowPublicKeyRetrieval": true
+}

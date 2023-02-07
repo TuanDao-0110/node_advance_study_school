@@ -59,4 +59,10 @@ show tables;
 select * from column_name;
 
 
+-- get user name in terminal
+
+
+mysql - u newuser - h 127.0.0.1 - p
+-- get database;
+use database_name
 

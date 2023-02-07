@@ -2,7 +2,7 @@
     "host": "127.0.0.1",
     "admin": "root",
     "user": "newuser",
-    "userpassword": "Milan123@",
+    "password": "Milan123@",
     "dropUser": true,
     "debug": true,
     "port": 3306,

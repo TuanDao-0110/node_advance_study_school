@@ -22,7 +22,7 @@ PATCH
 For example all computers:
 
 ```
-http://localhost:4000/api/computers
+http://localhost:4000/api/computers HTTP/1.1 
 ```
 
 ### GET
