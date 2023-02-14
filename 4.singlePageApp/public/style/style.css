@@ -1,3 +1,10 @@
+body {
+    text-transform: capitalize;
+}
+
 h1 {
     color: green;
+}
+table, th, td {
+  border: 1px solid;
 }

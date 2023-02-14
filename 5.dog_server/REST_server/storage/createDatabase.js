@@ -7,10 +7,9 @@ const printError = message =>
 ${message}\n${'#'.repeat(47)}`)
 
 // let createStatementFile = './createStatement.json'
-let createStatementFile = './computerCreateStatements.json'
+let createStatementFile = './dogCreateStatements.json'
 
 
-let adminPass = ''
 
 if (process.argv.length > 2) {
     adminPass = process.argv[2]
@@ -99,7 +98,7 @@ const createDb = async (createStatement, adminPass) => {
 
 // console.log(createStatementFile, adminPass)
 try {
-    createDb(require(createStatementFile), adminPass)
+    createDb(require(createStatementFile), 'Bongda123@')
 } catch (error) {
     printError(error)
 }

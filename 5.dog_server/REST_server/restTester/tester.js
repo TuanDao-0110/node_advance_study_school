@@ -14,7 +14,7 @@
         document.getElementById('submit').addEventListener('click', send)
         document.getElementById('methods').addEventListener('change', choose)
         clearSelections()
-        urifield.value = 'http://localhost:4000/api/computers'
+        urifield.value = 'http://localhost:4000/api/dog'
     }
     function clearSelections() {
         messagearea.testContent = ''

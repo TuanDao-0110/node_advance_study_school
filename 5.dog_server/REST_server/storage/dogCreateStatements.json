@@ -1,0 +1,38 @@
+{
+    "host": "127.0.0.1",
+    "admin": "root",
+    "user": "jacob",
+    "userpassword": "wVcAVTZ9@",
+    "dropUser": true,
+    "debug": true,
+    "database": "dogdb",
+    "allowPublicKeyRetrieval": true,
+    "tables": [
+        {
+            "tableName": "dog",
+            "columns": [
+                "id integer not null primary key",
+                "name varchar(38) not null",
+                "breed varchar(17) not null",
+                "length integer not null",
+                "birth integer not null"
+            ],
+            "data": [
+                [
+                    1,
+                    "pongo",
+                    "chihuahua",
+                    "20",
+                    5
+                ],
+                [
+                    2,
+                    "su",
+                    "mixed",
+                    "70",
+                    11
+                ]
+            ]
+        }
+    ]
+}

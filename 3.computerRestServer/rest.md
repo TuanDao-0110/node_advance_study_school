@@ -151,3 +151,10 @@ const oneComputer = "http://localhost:4000/api/computers";
 const data = await fetch(oneComputer, options);
 const result = await data.json();
 ```
+
+
+# to create database
+
+```shell
+node createDatabase <adminpassword> computerCreateStatements.json
+```
