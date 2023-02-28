@@ -8,7 +8,6 @@
         inputField = document.getElementById('dogid')
         messagearea = document.getElementById('messagearea')
         document.getElementById('submit').addEventListener('click', send)
-
     }
     async function send() {
         clearMessage()

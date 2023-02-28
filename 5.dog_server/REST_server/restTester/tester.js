@@ -1,7 +1,5 @@
 // 'use strict'
 (function () {
-
-
     let method = 'GET'
     let urifield;
     let jsonarea;

@@ -107,7 +107,6 @@ module.exports = class DataStorage {
         return new Promise(async (resolve, reject) => {
             try {
                 const data = await this.get(key)
-                console.log(data)
                 if (data.code === CODES.NOT_FOUND) {
                     return resolve(MESSAGES.NOT_FOUND(PRIMARY_KEY, key))
                 }

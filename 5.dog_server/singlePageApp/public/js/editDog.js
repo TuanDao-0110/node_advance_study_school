@@ -15,7 +15,6 @@
         try {
             await getDog()
             submit.addEventListener('click', hanldeEdit)
-
         } catch (error) {
 
         }
@@ -29,10 +28,8 @@
             const dog = await data.json()
             let form = ''
             for (let i in dog[0]) {
-                console.log(dog[0][i])
                 form += createCell(dog[0], i)
             }
-            console.log(form)
             resultarea.innerHTML = form
         } catch (error) {
 
@@ -41,7 +38,7 @@
     }
     function createCell(array, i) {
         let content = `<div>
-                        <label> ${i}: <input required type="text" id="${i}" value="${array[i]}" /></label>
+                        <label> ${i}: <input ${i === id ? 'readonly' : ""} required type="text" id="${i}" value="${array[i]}" /></label>
                        </div>`
         return content
     }
@@ -79,7 +76,7 @@
         }
     }
     function updateMessage(message, type) {
-        messagearea.textContent = message +' back to menu'
+        messagearea.textContent = message + ' back to menu'
         messagearea.setAttribute('class', type)
     }
 }())
