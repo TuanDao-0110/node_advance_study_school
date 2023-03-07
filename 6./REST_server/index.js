@@ -13,8 +13,6 @@ const RESOURCE = storage.resource
 // app.use(cors())
 app.use(express.json())
 
-
-
 app.get(`/api/${RESOURCE}`, (req, res) => {
     storage.getAll().then(
         result => res.json(result)

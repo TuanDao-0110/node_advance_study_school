@@ -1,5 +1,4 @@
 
-(function () {
     let resultarea;
     let messageare;
     let dogid
@@ -55,5 +54,3 @@
         messageare.removeAttribute('class')
     }
 
-
-}())

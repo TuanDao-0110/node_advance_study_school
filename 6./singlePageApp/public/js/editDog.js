@@ -1,4 +1,3 @@
-(function () {
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
     let idField
@@ -78,4 +77,3 @@
         messagearea.textContent = message + ' back to menu'
         messagearea.setAttribute('class', type)
     }
-}())

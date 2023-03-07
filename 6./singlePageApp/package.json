@@ -1,8 +1,8 @@
 {
-  "name": "5.dog_server",
+  "name": "6.",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+  "main": "indexSPA.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mariadb": "^3.0.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3"
+    "node-fetch": "^3.3.0"
   }
 }

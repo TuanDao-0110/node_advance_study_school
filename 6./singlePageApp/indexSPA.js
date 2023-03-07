@@ -1,12 +1,21 @@
 'use strict'
-const path = require('path')
+// const path = require('path')
+// const express = require('express')
+import * as path from 'path'
+
+// const fetch = require('node-fetch') // npm install node fetch@2
+// const fetch = require('../fechilib')
+import { fetch } from './fechilib.js'
+// define require
+import { createRequire } from 'module'
+const require = createRequire(import.meta.url)
 const express = require('express')
 const app = express()
-const fetch = require('node-fetch')
-
-
 
 const { port, host } = require('./config.json')
+//  Define __dirname
+import { fileURLToPath } from 'url'
+const __dirname = fileURLToPath(new URL('.', import.meta.url))
 // 1 set up rest server 
 
 app.use(express.json())
@@ -70,7 +79,7 @@ app.post('/remove', (req, res) => {
         res.json({ message: 'empty id' })
     }
 })
-app.all('*',(req,res)=> { 
+app.all('*', (req, res) => {
     res.json({ message: 'empty id' })
 })
 app.listen(port, host, () => {
