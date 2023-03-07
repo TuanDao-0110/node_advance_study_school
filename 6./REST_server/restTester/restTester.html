@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rest Tester</title>
+    <style>
+      main {
+        display: grid;
+        align-items: left;
+        justify-items: left;
+      }
+      #submit {
+        margin-top: 1em;
+      }
+      #urifield {
+        width: 25em;
+      }
+      h2 {
+        font-size: small;
+      }
+    </style>
+    <script src="./tester.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>REST tester</h1>
+      <p id="uri">
+        <label
+          >Resource URI:
+          <input type="text" width="80" id="urifield" />
+        </label>
+      </p>
+      <form id="methods">
+        <legend>choose</legend>
+        <label for="get">GET </label>
+        <input type="radio" name="pick" value="GET" id="get" />
+        <label for="post"> POST</label>
+        <input type="radio" name="pick" value="POST" id="post" />
+        <label for="put"> PUT </label>
+        <input type="radio" name="pick" value="PUT" id="put" />
+        <label for="delete"> DELETE</label>
+        <input type="radio" name="pick" value="DELETE" id="delete" />
+      </form>
+      <h2>JSON</h2>
+      <div>
+        <textarea id="jsonarea" cols="50" rows="10"></textarea>
+      </div>
+      <button id="submit">Submit</button>
+      <h2>Result</h2>
+      <pre id="messagearea"></pre>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "getAll": [
+        "select id,name,breed,length,birth from dog"
+    ],
+    "get": [
+        "select id,name,breed,length,birth from dog",
+        "where id=?"
+    ],
+    "insert": [
+        "insert into dog (id,name,breed,length,birth)",
+        "VALUES (?,?,?,?,?)"
+    ],
+    "update":[
+        "UPDATE dog SET name=?, breed=?, length=?, birth=?",
+        "WHERE id=?"
+    ],
+    "remove":["delete from dog where id=?"],
+    "primaryKey":"id",
+    "resource":"dog"
+}

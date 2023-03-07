@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/style.css" />
+    <script src="/js/addHandler.js"></script>
+    <title>Add dog</title>
+  </head>
+  <body>
+    <main>
+      <h1>Add new dog</h1>
+      <div class="fields">
+        <div>
+          <label> Id: <input required type="text" id="id" /></label>
+        </div>
+        <div>
+          <label> Name: <input required type="text" id="name" /></label>
+        </div>
+        <div>
+          <label> Breed: <input required type="text" id="breed" /></label>
+        </div>
+        <div>
+          <label> length: <input required type="text" id="length" /></label>
+        </div>
+        <div>
+          <label> birth: <input required type="text" id="birth" /></label>
+        </div>
+        <button id="submit">Submit</button>
+      </div>
+    </main>
+    <div class="button_area">
+      <div id="messagearea"></div>
+      <a href="/"><button>Menu</button></a>
+      <a href="/pages/allDogs.html">
+        <button>get all dog</button>
+      </a>
+      <a href="/pages/oneDog.html">
+        <button>get one dog</button>
+      </a>
+    </div>
+  </body>
+</html>
